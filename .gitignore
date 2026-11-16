@@ -1,0 +1,18 @@
+# Secure Admin System - .gitignore
+# Sensitif: Kunci Kriptografi & Credentials
+/storage/keys/*.pem
+/storage/keys/*.key
+!/storage/keys/.htaccess
+!/storage/keys/README.md
+
+# Log & Temporary files
+*.log
+/logs/
+/tmp/
+.env
+
+# OS and Editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
