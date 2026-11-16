@@ -138,33 +138,3 @@ Seluruh fungsi kriptografi, proteksi SQL Injection, mitigasi Replay Attack, dan 
 ```bash
 php crypto/test_all_features.php
 ```
-
-### Output Pengujian:
-```text
-========================================================
-SECURE ADMIN SYSTEM - VERIFIKASI PENGUJIAN OTOMATIS UTS
-========================================================
-
-[PASS] 1. Landing page (index.php) tersedia dan terkonfigurasi
-[PASS] 2. Akun administrator default valid (Argon2id/Bcrypt)
-       -> Username: admin
-[PASS] 3. Login dengan RSA Digital Signature sah BERHASIL diverifikasi
-[PASS] 4. Login dengan digital signature salah/palsu DITOLAK
-[PASS] 5. Challenge kedaluwarsa (expired) DITOLAK sistem
-[PASS] 6. Konten tersimpan di basis data 100% dalam bentuk Ciphertext
-       -> ID Konten: #8
-[PASS] 7. Kunci AES dibungkus RSA-OAEP dan berhasil dibuka Private Key
-       -> AES Key length: 256 bits
-[PASS] 8. Konten berhasil didekripsi sempurna kembali ke Plaintext asli
-[PASS] 9. Authentication Tag tidak valid menyebabkan dekripsi DITOLAK (Integritas Terjaga)
-[PASS] 10. Audit log mencatat seluruh aktivitas secara real-time
-[PASS] 11. Rate limiter memblokir upaya brute force setelah 5x gagal
-[PASS] 12. Storage kunci privat terlindungi dari akses langsung browser
-
-========================================================
-RINGKASAN HASIL PENGUJIAN: 12 LULUS / 0 GAGAL (100% SUKSES)
-========================================================
-```
-
----
-*Proyek Ujian Tengah Semester (UTS) - Keamanan Data dan Sistem Informasi 2026.*
